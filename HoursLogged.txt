@@ -1,0 +1,11 @@
+12:24 am 3/21/18
+MIDTERM
+I have finished the background, the form, the base models, controls, etc
+I need to add email and password validation along with the list to remember who has an account and who doesnt, look at party invites
+for help with that, i have also saved a website to check out.
+
+https://andrewlock.net/creating-custom-password-validators-for-asp-net-core-identity-2/
+
+https://docs.microsoft.com/en-us/aspnet/core/mvc/models/validation
+
+https://github.com/ahuimanu/CIDM3312Spring2018-Freeman-ProASPNETCoreMVC2/blob/master/Chapter02-PartyInvites/Models/Repository.cs

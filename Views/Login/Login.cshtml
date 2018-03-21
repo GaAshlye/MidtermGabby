@@ -1,0 +1,57 @@
+@model Login
+@{
+    ViewData["Title"] = "Login";
+}
+@{
+  Layout = "_StarterLayout";
+}
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+<body>
+    <form class="form-horizontal" asp-action="LoginSuccess" method = "POST" role ="form">
+<fieldset> 
+
+<!-- Form Name -->
+ <legend>Login</legend> -->
+
+<!-- Text input-->
+ <div class="form-group">
+  <label asp-for="Email" class="col-md-4 control-label">Email: </label>  
+  <div class="col-md-4">
+  <input asp-for="Email" type = "text"  class="form-control input-md">
+  <span class="help-block">help</span>  
+  </div>
+</div> 
+
+<!-- Password input-->
+ <div class="form-group">
+  <label class="col-md-4 control-label" asp-for="PassWord">Password:</label>
+  <div class="col-md-4">
+    <input asp-for="PassWord" type="password"  class="form-control input-md">
+    <span class="help-block">help</span>
+  </div>
+</div> 
+
+<!-- Button -->
+ <div class="form-group">
+  <label class="col-md-4 control-label" >Submit</label>
+  <div class="col-md-4">
+    <button class="btn btn-primary">Login</button>
+  </div>
+</div>
+<p class="lead"><a href = "CreateAccount/"> Create Account</a></p>
+
+</fieldset>
+</form>
+
+</body>
+</html> 
+
+
