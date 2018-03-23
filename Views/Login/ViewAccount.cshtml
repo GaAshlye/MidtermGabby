@@ -1,0 +1,30 @@
+@model IEnumerable<Midterm.Models.CreateProfile>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table class="table table-sm table-striped table-bordered">
+            <thead>
+                <tr>
+                    <!-- <th>Name</th> -->
+                    <th>Email</th>
+                    <th>Password</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Midterm.Models.CreateProfile r in Model) {
+                    <tr>
+                        
+                        <td>@r.Email</td>
+                        <td>@r.PassWord</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+</body>
+</html>

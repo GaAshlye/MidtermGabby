@@ -1,4 +1,4 @@
-@model Login
+@model CreateProfile
 @{
     ViewData["Title"] = "Login";
 }
@@ -19,14 +19,14 @@
 <fieldset> 
 
 <!-- Form Name -->
- <legend>Login</legend> -->
+ <legend>Login</legend> 
 
 <!-- Text input-->
  <div class="form-group">
   <label asp-for="Email" class="col-md-4 control-label">Email: </label>  
   <div class="col-md-4">
   <input asp-for="Email" type = "text"  class="form-control input-md">
-  <span class="help-block">help</span>  
+  <!-- <span class="help-block">help</span>   -->
   </div>
 </div> 
 
@@ -35,18 +35,18 @@
   <label class="col-md-4 control-label" asp-for="PassWord">Password:</label>
   <div class="col-md-4">
     <input asp-for="PassWord" type="password"  class="form-control input-md">
-    <span class="help-block">help</span>
+    <!-- <span class="help-block">help</span> -->
   </div>
 </div> 
 
 <!-- Button -->
  <div class="form-group">
-  <label class="col-md-4 control-label" >Submit</label>
+  <label class="col-md-4 control-label" ></label>
   <div class="col-md-4">
     <button class="btn btn-primary">Login</button>
   </div>
 </div>
-<p class="lead"><a href = "CreateAccount/"> Create Account</a></p>
+<!-- <p class="lead"><a href = "../CreateAccount/"> Create Account</a></p> -->
 
 </fieldset>
 </form>
